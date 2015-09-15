@@ -1,0 +1,23 @@
+---
+lb01.object.example.org:
+  :roles:
+    - base
+    - swift_loadbalancer
+  :ip: 10.0.0.1
+  :host: lb01.object.example.org
+  :ipmi: 10.0.1.10
+  :ipmi_gateway: 10.0.1.1
+#lb02.object.example.org:
+#  :roles:
+#    - base
+#  :server_ip: 10.0.0.11
+#  :host: lb02.object.example.org
+#  :ipmi: 10.0.1.11
+#  :ipmi_gateway: 10.0.1.1
+# Localhost for tests that must be run from localhost
+localhost:
+  :roles:
+    - local
+  :ip: 127.0.0.1
+  :host: localhost
+  :username: dmsimard
